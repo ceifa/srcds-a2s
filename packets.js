@@ -1,4 +1,4 @@
-const CHALLENGE_GENERIC = 0x41 // A
+// https://developer.valvesoftware.com/wiki/Server_queries
 
 const A2S_INFO = { // Does not require a challenge
     body: [
