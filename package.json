@@ -1,6 +1,6 @@
 {
   "name": "srcds-a2s",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -8,6 +8,7 @@
   },
   "author": "",
   "license": "ISC",
+  "keywords": ["a2s", "steam", "srcds", "rcon"],
   "dependencies": {
     "packet": "0.0.3"
   }

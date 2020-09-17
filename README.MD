@@ -13,5 +13,10 @@ require('srcds-a2s').info(ip, port) // Make an A2S_INFO query
 Make an A2S_INFO query:
 
 ```sh
-$: srcds 192.168.0.1 27018 
+$: srcds 192.168.0.1 27018
+```
+
+Or use npx:
+```sh
+$: npx srcds-a2s 192.168.0.1 27018
 ```
