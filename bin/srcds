@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+const { info } = require("../index")
+
+const snippets = process.argv.splice(2)
+//const option = snippets.shift()
+
+;(async () => {
+    //if (option === 'info') {
+        const [ip, port] = snippets
+
+        if (!ip || !port) {
+            throw new Error('IP or PORT not specified')
+        }
+
+        const info_response = await info(ip, port)
+        
+        const echo = []
+        echo.push(`Name: ${info_response.serverName}`)
+        echo.push(`Map: ${info_response.map}`)
+        echo.push(`Gamemode: ${info_response.gameName}`)
+        echo.push(`Players: ${info_response.numPlayers}(Max ${info_response.maxPlayers})`)
+        echo.push(`Game: ${info_response.gameType}(${info_response.appID}`)
+        echo.push(`Version: ${info_response.version} ~ ${info_response.gameVersion}`)
+        console.log(echo.join('\n'))
+    // } else {
+    //     throw new Error(`Option '${option}' not found`)
+    // }
+})();

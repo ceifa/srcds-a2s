@@ -1,0 +1,14 @@
+{
+  "name": "srcds-a2s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "srcds": "bin/srcds"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "packet": "0.0.3"
+  }
+}
