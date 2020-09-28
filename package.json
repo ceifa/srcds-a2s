@@ -6,7 +6,8 @@
   "bin": {
     "srcds": "bin/srcds"
   },
-  "author": "",
+  "author": "ceifa",
+  "repository": "github:ceifa/srcds-a2s"
   "license": "ISC",
   "keywords": ["a2s", "steam", "srcds", "rcon"],
   "dependencies": {
